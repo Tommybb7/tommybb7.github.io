@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INVITACION PARA MI REINA</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(intensamente.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+            backdrop-filter: blur(5px);
+            margin: 0;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            max-width: 90%;
+            width: 400px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            color: #000;
+        }
+        h1 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hola mi princesa hermosa que me encanta tanto y me trae loquito, como te lo dije anteriormente, sabía que querías ir a ver esta película. Así que...</h1>
+        <h1>¿Quieres ir a ver Intensamente 2 conmigo?</h1>
+        <button onclick="respuestaSi()">Sí</button>
+        <button onclick="respuestaNo()">No</button>
+        <p id="mensaje"></p>
+    </div>
+
+    <script>
+        function respuestaSi() {
+            document.getElementById('mensaje').innerText = "Me encantas mucho mujer mía, el sábado iremos a las 7 :)";
+        }
+
+        function respuestaNo() {
+            document.getElementById('mensaje').innerText = "Está bien, creí que lo nuestro iba en serio :(";
+        }
+    </script>
+</body>
+</html>
